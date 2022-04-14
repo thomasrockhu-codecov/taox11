@@ -147,6 +147,7 @@ jobs:
       if: matrix.feature == 'Codecov'
     - uses: codecov/codecov-action@v3
       with:
+        gcov: true
         verbose: true # optional (default = false)
       if: matrix.feature == 'Codecov'
 
